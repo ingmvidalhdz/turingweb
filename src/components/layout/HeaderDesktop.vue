@@ -4,13 +4,13 @@
       <h2 class="title-turing">TURING-IA</h2>
     </div>
     <div class="menu">
-      <a href="" class="item-menu" @click="goTo('Inicio')">Inicio</a>
-      <a href="" class="item-menu" @click="goTo('Nosotros')">Nosotros</a>
-      <a href="" class="item-menu">Servicios</a>
-      <a href="" class="item-menu">Tableau</a>
-      <a href="" class="item-menu">Portal</a>
-      <a href="" class="item-menu">Blog</a>
-      <a href="" class="item-menu">Contacto</a>
+      <v-btn class="item-menu" @click="goTo('Inicio')">Inicio</v-btn>
+      <v-btn class="item-menu" @click="goTo('Nosotros')">Nosotros</v-btn>
+      <v-btn class="item-menu" @click="goTo('Servicios')">Servicios</v-btn>
+      <v-btn class="item-menu">Tableau</v-btn>
+      <v-btn class="item-menu">Portal</v-btn>
+      <v-btn class="item-menu">Blog</v-btn>
+      <v-btn class="item-menu">Contacto</v-btn>
     </div>
   </div>
 </template>
@@ -32,7 +32,7 @@ const goTo = (to) => {
   z-index: 2000;
   width: 100%;
   height: 75px;
-  background: rgba(19, 27, 133,0.5);
+  background: rgba(19, 27, 133, 1);
 }
 
 .container {
@@ -63,9 +63,11 @@ const goTo = (to) => {
 
 .item-menu {
   text-decoration: none;
-  margin: 50% 3%;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   color: white;
+  background: none;
+  box-shadow: none;
+  margin-right: 20px;
 }
 </style>;

@@ -1,8 +1,19 @@
 <template>
-  <video autoplay muted loop>
-    <source src="https://drive.google.com/uc?export=download&id=1J_Y4xY_FGItfFan4xu0GBo1w73WYqxFT" type="video/m4v" />
-  </video>
+  <div class="container">
+    <video-about />
+    <who-we-are />
+    <bussines-inteligence />
+    <our-certificates />
+    <us-unique />
+    <our-parthers />
+  </div>
 </template>
 <script setup>
+import VideoAbout from "@/components/about/videoAbout.vue";
+import WhoWeAre from "@/components/about/WhoWeAre.vue";
+import BussinesInteligence from "@/components/about/BussinesInteligence.vue";
+import OurCertificates from "@/components/about/OurCertificates.vue";
+import UsUnique from "@/components/about/UsUnique.vue";
+import OurParthers from "@/components/about/OurParthers.vue";
 </script>
 <style scoped></style>
